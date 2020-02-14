@@ -1,6 +1,7 @@
 FROM centos:7
 MAINTAINER Anton Trusov <inhavk@gmail.com>
 
+
 RUN \
   yum -y install curl git epel-release && \
   yum -y install python36 python36-setuptools && \

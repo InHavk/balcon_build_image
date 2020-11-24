@@ -1,0 +1,10 @@
+FROM ubuntu:20.04
+MAINTAINER Anton Trusov <inhavk@gmail.com>
+
+
+RUN \
+  apt-get update && \
+  apt-get install -y curl git python3 python3-setuptools && \
+  curl https://bootstrap.pypa.io/get-pip.py -o - | /usr/bin/python3 && \
+  pip3 install twine && \
+  apt-get clean
